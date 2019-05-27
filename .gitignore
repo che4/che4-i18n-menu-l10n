@@ -1,0 +1,9 @@
+/**/target/
+/**/.settings/
+/**/.project
+/**/.classpath
+/**/bin/
+/**/.flattened-pom.xml
+/.mvn/
+/mvnw
+/mvnw.cmd

@@ -1,0 +1,81 @@
+# convert feature into the P2 category
+singleton=true
+## CREATE CATEGORY FOR FRAGMENTS TO SUPPORT ADDITIONAL LANGUAGES
+units.1.id=io.github.che4.i18n.menu.l10n.languages.category
+units.1.version=1.0.0
+units.1.singleton=true
+units.1.provides.1.namespace=org.eclipse.equinox.p2.iu
+units.1.provides.1.name=io.github.che4.i18n.menu.l10n.category.languages
+units.1.provides.1.version=1.0.0
+units.1.properties.1.name=org.eclipse.equinox.p2.type.category
+units.1.properties.1.value=true
+units.1.properties.2.name=org.eclipse.equinox.p2.name
+units.1.properties.2.value=Additional languages for i18n menu
+#units.1.properties.3.name=org.eclipse.equinox.p2.type.iu
+#units.1.properties.3.value=true
+## RUSSIAN ##
+units.1.requires.1.namespace=org.eclipse.equinox.p2.iu
+units.1.requires.1.name=io.github.che4.i18n.menu.l10n.ru
+units.1.requires.1.range=[1.0.0,2.0.0)
+units.1.requires.1.optional=true
+units.1.requires.1.greedy=true
+## TURKISH ##
+units.1.requires.2.namespace=org.eclipse.equinox.p2.iu
+units.1.requires.2.name=io.github.che4.i18n.menu.l10n.tr
+units.1.requires.2.range=[1.0.0,2.0.0)
+units.1.requires.2.optional=true
+units.1.requires.2.greedy=true
+
+requires.1.namespace=org.eclipse.equinox.p2.iu
+requires.1.name=io.github.che4.i18n.menu.l10n.category.languages
+requires.1.range=[1.0.0,1.0.0]
+requires.1.greedy=true
+
+
+## CREATE CATEGORY FOR FRAGMENTS TO SUPPORT ADDITIONAL LANGUAGES
+
+
+#properties.0.name=org.eclipse.equinox.p2.type.category
+#properties.0.value=true
+#provides.1.namespace=x
+#provides.1.name=x.che4.i18n.feature
+#provides.1.version=$version$
+
+#metaRequirements.1.namespace=org.eclipse.equinox.p2.iu
+#metaRequirements.1.name=che4.i18n.category
+#metaRequirements.1.range=[1.0.0,1.0.0]
+#metaRequirements.1.greedy=true
+
+
+
+#units.1.id=che4.i18n.category
+#units.1.version=1.0.0
+#units.1.provides.1.namespace=org.eclipse.equinox.p2.iu
+#units.1.provides.1.name=che4.i18n.category
+#units.1.provides.1.version=1.0.0
+#units.1.properties.1.name=org.eclipse.equinox.p2.type.category
+#units.1.properties.1.value=true
+#units.1.properties.2.name=org.eclipse.equinox.p2.name
+#units.1.properties.2.value=Che4 i18n category
+#units.1.requires.1.namespace=org.eclipse.equinox.p2.iu
+#units.1.requires.1.name=io.github.che4.i18n.menu.l10n.feature.feature.group
+#units.1.requires.1.range=[$version$,$version$]
+#units.1.requires.1.greedy=false
+#units.1.metaRequirements.1.namespace=org.eclipse.equinox.p2.iu
+#units.1.metaRequirements.1.name=che4.category
+#units.1.metaRequirements.1.range=[1.0.0,1.0.0]
+#units.1.metaRequirements.1.greedy=true
+
+#units.2.id=che4.category
+#units.2.version=1.0.0
+#units.2.provides.1.namespace=org.eclipse.equinox.p2.iu
+#units.2.provides.1.name=che4.category
+#units.2.provides.1.version=1.0.0
+#units.2.properties.1.name=org.eclipse.equinox.p2.type.category
+#units.2.properties.1.value=true
+#units.2.properties.2.name=org.eclipse.equinox.p2.name
+#units.2.properties.2.value=Che4 category
+#units.2.requires.1.namespace=org.eclipse.equinox.p2.iu
+#units.2.requires.1.name=che4.i18n.category
+#units.2.requires.1.range=[1.0.0,1.0.0]
+#units.2.requires.1.greedy=false
