@@ -8,5 +8,5 @@ cache:
 #  - chmod +x mvnw
 #before_script: chmod +x mvnw
 script: >-
-  mvn -f ./menu.releng --global-settings ./.travis/settings.xml -DforceContextQualifier=$TRAVIS_BUILD_NUMBER &&
-  mvn -f ./menu.releng --global-settings ./.travis/settings.xml deploy
+  mvn -f ./io.github.che4.i18n.menu.l10n.releng --global-settings ./.travis/settings.xml -DforceContextQualifier=$TRAVIS_BUILD_NUMBER &&
+  mvn -f ./io.github.che4.i18n.menu.l10n.releng --global-settings ./.travis/settings.xml deploy
